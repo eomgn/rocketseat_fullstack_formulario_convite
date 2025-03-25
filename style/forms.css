@@ -13,12 +13,9 @@ fieldset {
     color: var(--text-heading);
     align-items: center;
     margin-bottom: 1.5rem;
-
-    & .icon-legend {
-      background-image: url(../assets/icons/calendar.svg);
-      background-size: contain;
-      width: 1.5rem;
-      height: 1.5rem;
-    }
   }
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
 }
