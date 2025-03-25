@@ -36,11 +36,13 @@
           <h2 class="title-md">Crie seu convite</h2>
 
           <form>
+            <!-- Área - Sobre o evento -->
             <fieldset class="c-about-event">
               <legend class="title-sm flex gap-12">
                 <span class="icon-legend"></span>Sobre o evento
               </legend>
 
+              <!-- Título -->
               <div class="input-wrapper">
                 <label for="title">Título</label>
                 <input
@@ -51,6 +53,7 @@
                 />
               </div>
 
+              <!-- Início -->
               <div class="flex gap-16">
                 <div class="input-wrapper flex-1">
                   <label for="date-start">Início</label>
@@ -62,6 +65,7 @@
                   />
                 </div>
 
+                <!-- Fim -->
                 <div class="input-wrapper flex-1">
                   <label for="date-end">Fim</label>
                   <input
@@ -73,13 +77,14 @@
                 </div>
               </div>
 
+              <!-- Tipo -->
               <div class="flex gap-16">
                 <div class="input-wrapper flex-1">
                   <label for="type">Tipo</label>
 
                   <div class="radio-wrapper">
+                    <!-- Presencial -->
                     <div class="radio-inner">
-                      <!-- <div class="radio-image"></div> -->
                       <svg
                         width="16"
                         height="16"
@@ -99,8 +104,8 @@
                       <label for="type"> Presencial</label>
                     </div>
 
+                    <!-- Online -->
                     <div class="radio-inner">
-                      <!-- <div class="radio-image"></div> -->
                       <svg
                         width="16"
                         height="16"
@@ -122,12 +127,19 @@
                   </div>
                 </div>
 
+                <!-- Local -->
                 <div class="input-wrapper flex-1">
                   <label for="address">Local</label>
-                  <input type="text" id="address" name="address" />
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    placeholder="Link ou endereço"
+                  />
                 </div>
               </div>
 
+              <!-- Descrição -->
               <div class="textarea-wrapper">
                 <label for="description">Descrição</label>
                 <textarea
@@ -135,6 +147,7 @@
                   id="description"
                   cols="30"
                   rows="5"
+                  placeholder="Escreva sobre os detalhes do evento"
                 ></textarea>
               </div>
             </fieldset>
