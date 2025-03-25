@@ -1,0 +1,23 @@
+.title-xl {
+  font: var(--h1);
+}
+
+.title-md {
+  font: var(--h2);
+}
+
+.title-sm {
+  font: var(--h3);
+}
+
+.text {
+  font: var(--text);
+}
+
+.text-sm {
+  font: var(--text-sm);
+}
+
+.text-xs {
+  font: var(--text-xs);
+}

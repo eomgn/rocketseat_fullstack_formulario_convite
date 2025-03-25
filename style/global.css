@@ -9,13 +9,13 @@
   --font-family-baloo-two: "Baloo 2", sans-serif;
   --font-family-open-sans: "Open Sans", sans-serif;
 
-  --h1: 600 2.5rem / auto var(--font-family-leckerli);
-  --h2: 900 1.75rem / auto var(--font-family-baloo-two);
-  --h3: 900 1.125rem / auto var(--font-family-baloo-two);
+  --h1: 400 2.5rem/100% var(--font-family-leckerli);
+  --h2: 900 1.75rem/100% var(--font-family-baloo-two);
+  --h3: 900 1.125rem/100% var(--font-family-baloo-two);
 
-  --text: 400 1rem / auto var(--font-family-open-sans);
-  --text-sm: 400 0.875rem / auto var(--font-family-open-sans);
-  --text-xs: 400 0.75rem / auto var(--font-family-open-sans);
+  --text: 400 1rem/100% var(--font-family-open-sans);
+  --text-sm: 400 0.875rem/100% var(--font-family-open-sans);
+  --text-xs: 400 0.75rem/100% var(--font-family-open-sans);
 
   --brand-light: #59b2ff;
   --brand-mid: #3487cf;
@@ -44,4 +44,70 @@
 
   --text-body: #c8cdd0;
   --text-heading: #f9f9f9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 32.78% 67.21%;
+
+  gap: 20px;
+
+  padding: 1.25rem;
+
+  height: 100%;
+
+  background-color: var(--shape-background);
+}
+
+aside {
+  max-width: 25rem;
+  margin-left: auto;
+
+  & .aside-container {
+    position: relative;
+
+    & > img {
+      border-radius: 0.75rem;
+    }
+
+    .c-logo {
+      position: absolute;
+      top: 0;
+      padding: 2rem;
+
+      & > img {
+        max-width: 2.867rem;
+        height: 3rem;
+      }
+
+      h1 {
+        color: var(--pink);
+        padding-block: 1rem;
+      }
+
+      p {
+        color: var(--text-heading);
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+main {
+  padding: 5rem 8.125rem;
+
+  background-color: var(--shape-body);
+  border-radius: 0.75rem;
+
+  margin-right: 20px;
+
+  & .main-container {
+    max-width: 51.25rem;
+    margin-right: auto;
+  }
 }
