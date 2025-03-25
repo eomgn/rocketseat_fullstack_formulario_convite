@@ -43,8 +43,28 @@
   }
 
   &:has(:checked) {
+    font: var(--text-sm);
+    font-weight: 500;
+    color: var(--text-heading);
     & svg path {
       fill: var(--brand-light);
+    }
+  }
+}
+
+.c-personalization {
+  & .radio-wrapper {
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .radio-inner {
+    & input {
+      width: 40px;
+      height: 40px;
+
+      background-color: red;
+      border-radius: 100%;
     }
   }
 }
