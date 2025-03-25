@@ -17,27 +17,33 @@
 
   display: flex;
   align-items: center;
-  justify-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  position: relative;
+
+  label {
+    all: unset;
+  }
 
   & input,
   & input:focus,
-  & input:hover,
-  & label {
-    /* removendo css ja aplicado em outros blocos e o css padrão */
+  & input:hover {
     all: unset;
 
-    /* com essas propriedades o checkbox cobre todo o espaço */
+    position: absolute;
     inset: 0;
   }
 
   &:hover,
   &:focus-within {
-    border: 1px solid red;
+    background-color: var(--shape-button);
   }
 
-  /* alterando imagem do radio-image mediante checked */
   &:has(:checked) {
-    border: 2px solid red;
+    & svg path {
+      fill: var(--brand-light);
+    }
   }
 }
