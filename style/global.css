@@ -83,6 +83,7 @@ aside {
       & > img {
         max-width: 2.867rem;
         height: 3rem;
+        object-fit: contain;
       }
 
       h1 {
