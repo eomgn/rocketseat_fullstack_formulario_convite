@@ -6,4 +6,19 @@ form {
 
 fieldset {
   border: none;
+  display: grid;
+  gap: 1rem;
+
+  legend {
+    color: var(--text-heading);
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    & .icon-legend {
+      background-image: url(../assets/icons/calendar.svg);
+      background-size: contain;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
 }

@@ -33,11 +33,13 @@
 
       <main>
         <div class="main-container">
-          <h2>Crie seu convite</h2>
+          <h2 class="title-md">Crie seu convite</h2>
 
           <form>
             <fieldset class="c-about-event">
-              <legend>Sobre o evento</legend>
+              <legend class="title-sm flex gap-12">
+                <span class="icon-legend"></span>Sobre o evento
+              </legend>
 
               <div class="input-wrapper">
                 <label for="title">Título</label>
@@ -49,30 +51,36 @@
                 />
               </div>
 
-              <div class="flex">
-                <div class="input-wrapper">
+              <div class="flex gap-16">
+                <div class="input-wrapper flex-1">
                   <label for="date-start">Início</label>
                   <input
                     type="datetime-local"
                     id="date-start"
                     name="date-start"
+                    required
                   />
                 </div>
 
-                <div class="input-wrapper">
+                <div class="input-wrapper flex-1">
                   <label for="date-end">Fim</label>
-                  <input type="datetime-local" id="date-end" name="date-end" />
+                  <input
+                    type="datetime-local"
+                    id="date-end"
+                    name="date-end"
+                    required
+                  />
                 </div>
               </div>
 
-              <div class="flex">
-                <div class="radio-wrapper">
-                  <label for="type">Início</label>
+              <div class="flex gap-16">
+                <div class="radio-wrapper flex-1">
+                  <label for="type">Tipo</label>
                   <input type="radio" id="type" name="type" />
                 </div>
 
-                <div class="input-wrapper">
-                  <label for="address">Fim</label>
+                <div class="input-wrapper flex-1">
+                  <label for="address">Local</label>
                   <input type="text" id="address" name="address" />
                 </div>
               </div>
