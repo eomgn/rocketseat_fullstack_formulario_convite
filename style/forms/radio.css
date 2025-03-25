@@ -1,0 +1,43 @@
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 0.25rem;
+
+  background-color: #1c1f21;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+
+  border: 1px solid #363b40;
+}
+
+.radio-inner {
+  border-radius: 0.3rem;
+  font: var(--text-sm);
+  padding: 0.75rem 1.125rem;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+
+  & input,
+  & input:focus,
+  & input:hover,
+  & label {
+    /* removendo css ja aplicado em outros blocos e o css padrão */
+    all: unset;
+
+    /* com essas propriedades o checkbox cobre todo o espaço */
+    inset: 0;
+  }
+
+  &:hover,
+  &:focus-within {
+    border: 1px solid red;
+  }
+
+  /* alterando imagem do radio-image mediante checked */
+  &:has(:checked) {
+    border: 2px solid red;
+  }
+}
