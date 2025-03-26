@@ -8,6 +8,17 @@
   padding: 0.25rem;
 
   border: 1px solid var(--input-stroke);
+
+  .radio-inner {
+    & input,
+    & input:focus,
+    & input:hover {
+      all: unset;
+
+      position: absolute;
+      inset: 0;
+    }
+  }
 }
 
 .radio-inner {
@@ -28,15 +39,6 @@
     all: unset;
   }
 
-  & input,
-  & input:focus,
-  & input:hover {
-    all: unset;
-
-    position: absolute;
-    inset: 0;
-  }
-
   &:hover,
   &:focus-within {
     background-color: var(--shape-button);
@@ -46,6 +48,8 @@
     font: var(--text-sm);
     font-weight: 500;
     color: var(--text-heading);
+    background-color: var(--shape-button);
+
     & svg path {
       fill: var(--brand-light);
     }
@@ -56,15 +60,66 @@
   & .radio-wrapper {
     width: 100%;
     display: inline-flex;
+    justify-content: space-between;
+
+    background-color: transparent;
+    border: none;
   }
 
   .radio-inner {
-    & input {
-      width: 40px;
-      height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
 
-      background-color: red;
+    & input {
+      border: 0.375rem solid var(--shape-button);
       border-radius: 100%;
+
+      &:hover {
+        border: 0.375rem solid var(--shape-hover);
+        border-radius: 100%;
+      }
+
+      &:checked {
+        border-radius: 100%;
+        border: 0.4rem solid var(--shape-hover);
+
+        outline: 0.125rem solid var(--brand-light);
+      }
+
+      &#brand-light {
+        background-color: var(--brand-light);
+      }
+      &#navy {
+        background-color: var(--navy);
+      }
+      &#purple {
+        background-color: var(--purple);
+      }
+      &#fuschia {
+        background-color: var(--fuschia);
+      }
+      &#pink {
+        background-color: var(--pink);
+      }
+      &#danger {
+        background-color: var(--danger);
+      }
+      &#orange {
+        background-color: var(--orange);
+      }
+      &#yellow {
+        background-color: var(--yellow);
+      }
+      &#lime {
+        background-color: var(--lime);
+      }
+      &#green {
+        background-color: var(--green);
+      }
+      &#cyan {
+        background-color: var(--cyan);
+      }
     }
   }
 }
