@@ -58,6 +58,11 @@
   display: grid;
   gap: 1.75rem;
 
+  & .input-wrapper > label {
+    margin-bottom: 16px;
+    color: #ffffff;
+  }
+
   & .radio-wrapper__colors {
     width: 100%;
     display: inline-flex;
@@ -163,6 +168,7 @@
         padding-top: 0.5rem;
 
         font: var(--text-sm);
+        color: var(--text-heading);
       }
 
       &:has(:checked) {

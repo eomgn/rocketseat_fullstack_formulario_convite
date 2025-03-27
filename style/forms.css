@@ -19,7 +19,3 @@ fieldset {
 fieldset + fieldset {
   margin-top: 3rem;
 }
-
-div + label {
-  margin-bottom: 3rem;
-}
