@@ -1,0 +1,72 @@
+.switch-wrapper {
+  .switch {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    gap: 12px;
+
+    margin: 0;
+
+    & input {
+      width: 4rem;
+      height: 2rem;
+      opacity: 0;
+
+      &:checked + .slider {
+        background-color: var(--brand-light);
+      }
+
+      &:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+        background-color: var(--text-heading);
+      }
+
+      &:checked ~ .text-switch::before {
+        position: absolute;
+        content: "Claro";
+      }
+    }
+
+    & .slider {
+      position: absolute;
+      content: "";
+      width: 4rem;
+      height: 2rem;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 999px;
+      background-color: var(--input-base);
+      border: 1px solid var(--input-stroke);
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 999px;
+        background-color: var(--input-stroke);
+        left: 4px;
+        top: 4px;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+    }
+
+    & .text-switch {
+      display: inline-block;
+      margin-top: 0.4rem;
+
+      &::before {
+        position: absolute;
+        content: "Escuro";
+      }
+    }
+  }
+}
