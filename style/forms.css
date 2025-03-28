@@ -19,3 +19,7 @@ fieldset {
 fieldset + fieldset {
   margin-top: 3rem;
 }
+
+.actions-wrapper {
+  justify-self: end;
+}

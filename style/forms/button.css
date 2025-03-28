@@ -1,0 +1,22 @@
+.btn-primary {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--text-heading);
+  background-color: var(--brand-dark);
+
+  border-radius: 8px;
+
+  padding: 14px 20px;
+
+  font: var(--text);
+  text-align: center;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--brand-light);
+  }
+}

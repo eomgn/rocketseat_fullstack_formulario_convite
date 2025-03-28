@@ -46,6 +46,8 @@ label {
 }
 
 .input-wrapper {
+  position: relative;
+
   & > .style-file {
     display: grid;
     grid-template-columns: 31.42% 68.58%;
@@ -73,6 +75,12 @@ label {
     &:not(:focus):valid + .error {
       border: 1px solid var(--danger);
       display: none;
+    }
+  }
+
+  & input[type="datetime-local"] {
+    &::-webkit-calendar-picker-indicator {
+      opacity: 0;
     }
   }
 }
