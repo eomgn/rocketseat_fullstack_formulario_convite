@@ -44,3 +44,11 @@ label {
 
   color: var(--text-body);
 }
+
+.input-wrapper {
+  & > .style-file {
+    display: grid;
+    grid-template-columns: 31.42% 68.58%;
+    gap: 1rem;
+  }
+}

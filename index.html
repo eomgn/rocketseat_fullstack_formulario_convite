@@ -332,18 +332,33 @@
                 </div>
               </div>
 
-              <div class="input-wrapper grid grid-flow-col gap-16">
-                <div class="switch-wrapper">
-                  <label for="">Estilo</label>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <span class="slider"></span>
-                    <span class="text-switch"></span>
-                  </label>
-                </div>
+              <div class="input-wrapper">
+                <div class="style-file">
+                  <div class="switch-wrapper">
+                    <label>Estilo</label>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider"></span>
+                      <span class="text-switch"></span>
+                    </label>
+                  </div>
 
-                <div class="file-wrapper">
-                  <label for="">Estilo</label>
+                  <div class="file-wrapper">
+                    <label>Foto de capa</label>
+                    <div class="file-inner">
+                      <div class="file-button">
+                        <img
+                          src="./assets/icons/upload.svg"
+                          alt="icone de upload"
+                        />
+                        <input type="file" name="file" id="file" />
+                        <label for="file">Selecionar</label>
+                      </div>
+                      <label class="file-name"
+                        >Nenhum arquivo selecionado</label
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
             </fieldset>
