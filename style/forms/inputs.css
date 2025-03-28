@@ -55,8 +55,6 @@ label {
     gap: 1rem;
   }
 
-  width: 100%;
-
   & input[id="name"] {
     &:invalid {
       border: 1px solid var(--danger);
