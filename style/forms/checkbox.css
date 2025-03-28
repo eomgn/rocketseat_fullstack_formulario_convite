@@ -1,4 +1,8 @@
 .switch-wrapper {
+  & label:nth-child(1) {
+    padding-bottom: 8px;
+  }
+
   .switch {
     position: relative;
     display: inline-flex;
