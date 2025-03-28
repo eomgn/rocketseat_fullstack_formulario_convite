@@ -51,4 +51,28 @@ label {
     grid-template-columns: 31.42% 68.58%;
     gap: 1rem;
   }
+
+  width: 100%;
+
+  & input[id="name"] {
+    &:invalid {
+      border: 1px solid var(--danger);
+    }
+
+    &:required + .error {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      font: 400 0.75rem/100% var(--font-family-open-sans);
+      color: var(--danger);
+
+      margin-top: 0.5rem;
+    }
+
+    &:not(:focus):valid + .error {
+      border: 1px solid var(--danger);
+      display: none;
+    }
+  }
 }
