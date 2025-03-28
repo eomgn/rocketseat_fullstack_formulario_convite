@@ -1,3 +1,4 @@
+/* aplicando propriedades no tipo */
 .radio-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
@@ -54,6 +55,7 @@
   }
 }
 
+/* aplicando propriedades na area de cor principal  */
 .c-personalization {
   display: grid;
   gap: 1.75rem;
@@ -126,6 +128,7 @@
     }
   }
 
+  /* aplicando propriedades na area de tema do evento */
   & .radio-wrapper__themes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));

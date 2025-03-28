@@ -45,6 +45,7 @@ label {
   color: var(--text-body);
 }
 
+/* inputs: aplicando propriedades no input com id=name e type=datetime-local - propriedades em required/valid e error */
 .input-wrapper {
   position: relative;
 

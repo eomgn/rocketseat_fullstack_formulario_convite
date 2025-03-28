@@ -1,3 +1,4 @@
+/* aplicando propriedades na area de estilo */
 .switch-wrapper {
   & label:nth-child(1) {
     padding-bottom: 8px;
@@ -76,6 +77,7 @@
   }
 }
 
+/* aplicando propriedades na area de termos */
 .checkbox-wrapper {
   display: grid;
   gap: 4px;
